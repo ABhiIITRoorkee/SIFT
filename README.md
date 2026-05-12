@@ -1,4 +1,4 @@
-<h1>PLUG-TPL: A Modular LLM-Augmented Framework for Function-Aware Library Recommendation</h1>
+<h1>PLUG-TPL: [A Modular LLM-Augmented Framework for Function-Aware Library Recommendation](https://anonymous.4open.science/r/PLUG-TPL-D24B/README.md)</h1>
 
 <p><strong>Function-aware library recommendation for Android apps using dependency context and description-derived signals.</strong></p>
 
