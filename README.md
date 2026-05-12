@@ -1,4 +1,4 @@
-<h1>PLUG-TPL: [Verifying Before Recommending: Grounded LLM-Mined Intent for Software Recommendation]</h1>
+<h1>PLUG-TPL: Verifying Before Recommending: Grounded LLM-Mined Intent for Software Recommendation</h1>
 
 <p><strong>Function-aware library recommendation for Android apps using dependency context and description-derived signals.</strong></p>
 
