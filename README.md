@@ -1,28 +1,27 @@
-<h1>PLUG-TPL: Verifying Before Recommending: Grounded LLM-Mined Intent for Software Recommendation</h1>
 
-<p><strong>Function-aware library recommendation for Android apps using dependency context and description-derived signals.</strong></p>
+<h1>SIFT: Source-Supported Functional Intent Mining for Android Library Recommendation</h1>
+
+<p><strong>Function-aware library recommendation for Android applications using dependency context and source-supported functional evidence.</strong></p>
 
 <h2>Overview</h2>
 <p>
-PLUG-TPL is a modular framework for Android third-party library (TPL) recommendation that combines
-observed dependency context with description-derived evidence through a shared ranking pipeline.
-The framework is organized into three <strong>Phases</strong> that use the same downstream ranker while differing
-in how the app description is represented.
+SIFT is a modular framework for Android library recommendation that combines observed dependency context with description-derived functional evidence through a shared ranking architecture. The framework evaluates three alternative representation stages that use the same downstream ranking design while differing in how application functionality is represented.
 </p>
 
-<h2>Phases in PLUG-TPL</h2>
+<h2>Stages in SIFT</h2>
 <ul>
-  <li><strong>Phase A (Context Signal)</strong> — Uses only observed library co-usage/context information.</li>
-  <li><strong>Phase B (Semantic Signal)</strong> — Adds a raw-description semantic intent vector.</li>
-  <li><strong>Phase C (Verified Function Signal)</strong> — Mines function statements from descriptions, verifies textual support, and pools verified functions into a function-aware representation.</li>
+  <li><strong>Stage A (Dependency Context)</strong> - Uses only observed library co-usage and dependency-context information.</li>
+  <li><strong>Stage B (Raw-Description Semantics)</strong> - Combines dependency context with semantic embeddings of application descriptions.</li>
+  <li><strong>Stage C (Source-Supported Functional Signal)</strong> - Extracts capability statements using an LLM, applies consensus filtering and textual-support assessment, and constructs functional representations through support-weighted pooling.</li>
 </ul>
 
 <h2>Features</h2>
 <ul>
-  <li><strong>Modular Three-Phase Design</strong> with a shared scoring and ranking pipeline.</li>
-  <li><strong>Context-Aware Recommendation</strong> from observed app libraries.</li>
-  <li><strong>Description-Aware Signal Fusion</strong> for intent-aware ranking.</li>
-  <li><strong>LLM-Augmented Function Mining</strong> with verification for more reliable text-derived evidence.</li>
+  <li><strong>Three-Stage Representation Design</strong> with a shared scoring and ranking architecture.</li>
+  <li><strong>Context-Aware Recommendation</strong> using observed application dependencies.</li>
+  <li><strong>Description-Aware Representation</strong> for incorporating application-level semantic information.</li>
+  <li><strong>LLM-Based Capability Extraction</strong> with consensus filtering and model-assessed textual support.</li>
+  <li><strong>Support-Weighted Functional Aggregation</strong> for constructing structured functional representations.</li>
   <li><strong>Single-Command Pipeline Execution</strong> via <code>main.py</code> (train → test → metrics).</li>
 </ul>
 
@@ -45,5 +44,5 @@ in how the app description is represented.
 <ul>
   <li>Model checkpoints are saved during training.</li>
   <li>Recommendation files are generated during testing.</li>
-  <li>Final metric summaries are produced during the metrics step (as configured in your pipeline).</li>
+  <li>Final metric summaries are produced during the metrics step (as configured in the pipeline).</li>
 </ul>
